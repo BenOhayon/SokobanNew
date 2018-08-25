@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e43dcd2e-2b13-456b-80fb-e3ae27f2fee5" name="Default Changelist" comment="" />
+    <list default="true" id="e43dcd2e-2b13-456b-80fb-e3ae27f2fee5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sokoban.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/boot/Run.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/ExitCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/MoveCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/SokobanCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Notifier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Observer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/model/Model.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/model/SokobanDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/model/entities/Level.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/model/entities/Position.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/view/CLI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Sokoban/view/View.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/boot/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/commands/SokobanCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/observer/Notifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/SokobanDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/entities/Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/entities/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/CLI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -275,16 +309,15 @@
       <workItem from="1535119882888" duration="3173000" />
       <workItem from="1535134482530" duration="1615000" />
       <workItem from="1535139428020" duration="5615000" />
-      <workItem from="1535228097393" duration="1980000" />
+      <workItem from="1535228097393" duration="2227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22513000" />
+    <option name="totallyTimeSpent" value="22760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18731117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
