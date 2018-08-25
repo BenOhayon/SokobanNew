@@ -46,7 +46,7 @@ public class CLI implements View {
                           {'#', ' ', ' ', ' ', '#'},
                           {'#', 'A', '@', 'X', '#'},
                           {'#', ' ', ' ', ' ', '#'},
-                          {'#', '#', '#', '#', '#'}};
+                          {'#', '#', '#', '#', '#'}};   
 
         Level lvl = new Level("LevelExample", board);
         MoveCommand move = new MoveCommand(new SokobanDataSource(lvl), this);
