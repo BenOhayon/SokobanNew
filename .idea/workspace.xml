@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e43dcd2e-2b13-456b-80fb-e3ae27f2fee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/SokobanHQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/commands/LoadCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/commands/SaveCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/utils/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/boot/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/boot/Run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/MoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/MoveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/SokobanCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/SokobanCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Notifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Notifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Observer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/SokobanDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/model/SokobanDataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/loading/TextLevelLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/loading/TextLevelLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/saving/TextLevelSaver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/saving/TextLevelSaver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/view/CLI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/view/CLI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/boot/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/boot/Run.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/commands/SokobanCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/SokobanCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/observer/Notifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/observer/Notifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/observer/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/observer/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SokobanDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SokobanDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
-    </list>
+    <list default="true" id="e43dcd2e-2b13-456b-80fb-e3ae27f2fee5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,8 +122,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/persistancy/saving/TextLevelSaver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state relative-caret-position="167">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,6 +213,32 @@
             <path>
               <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -311,7 +309,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535281904561" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535284462168" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -401,12 +399,12 @@
       <workItem from="1535134482530" duration="1615000" />
       <workItem from="1535139428020" duration="5615000" />
       <workItem from="1535228097393" duration="7287000" />
-      <workItem from="1535270995702" duration="8764000" />
+      <workItem from="1535270995702" duration="9947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36584000" />
+    <option name="totallyTimeSpent" value="37767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -428,7 +426,7 @@
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32924962" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.27258804" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -444,6 +442,42 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -713,8 +747,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/persistancy/saving/TextLevelSaver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state relative-caret-position="167">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
