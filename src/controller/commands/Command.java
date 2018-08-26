@@ -1,8 +1,8 @@
 package controller.commands;
 
-import java.util.LinkedList;
+import java.util.List;
 
 public interface Command {
     void execute();
-    void setParams(LinkedList<String> params);
+    void setParams(List<String> params);
 }

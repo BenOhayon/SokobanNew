@@ -1,14 +1,11 @@
 package model;
 
+import controller.observer.Notifier;
 import model.entities.Level;
 
-public class SokobanDataSource implements Model {
+public class SokobanDataSource extends Notifier implements Model {
 
     private Level level;
-
-    public SokobanDataSource(Level lvl) {
-        setLevel(lvl);
-    }
 
     @Override
     public Level getLevel() {
@@ -18,5 +15,7 @@ public class SokobanDataSource implements Model {
     @Override
     public void setLevel(Level lvl) {
         this.level = lvl;
+        setChange(this.level);
+        notifyObservers();
     }
 }

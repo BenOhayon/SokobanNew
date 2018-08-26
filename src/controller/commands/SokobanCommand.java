@@ -3,10 +3,10 @@ package controller.commands;
 import model.Model;
 import view.View;
 
-import java.util.LinkedList;
+import java.util.List;
 
 public abstract class SokobanCommand implements Command {
-    private LinkedList<String> params;
+    private List<String> params;
     private Model model;
     private View view;
 
@@ -26,11 +26,11 @@ public abstract class SokobanCommand implements Command {
         return this.view;
     }
 
-    public LinkedList<String> getParams() {
+    public List<String> getParams() {
         return this.params;
     }
 
-    public void setParams(LinkedList<String> params) {
+    public void setParams(List<String> params) {
         this.params = params;
     }
 }

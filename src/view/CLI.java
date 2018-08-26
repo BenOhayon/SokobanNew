@@ -1,17 +1,27 @@
 package view;
 
-import controller.commands.MoveCommand;
-import model.SokobanDataSource;
+import controller.observer.Notifier;
 import model.entities.Level;
-import model.persistancy.loading.TextLevelLoader;
-import model.persistancy.saving.TextLevelSaver;
+import model.utils.MessageType;
 
-import java.util.LinkedList;
 import java.util.Scanner;
 
-public class CLI implements View {
+public class CLI extends Notifier implements View {
 
     private boolean loop = true;
+
+    @Override
+    public void displayMessage(String content, MessageType messageType) {
+        switch(messageType) {
+            case INFORMATION:
+                System.out.println(content);
+                break;
+
+            case ERROR:
+                System.err.println(content);
+                break;
+        }
+    }
 
     @Override
     public void displayLevel(Level level) {
@@ -23,16 +33,6 @@ public class CLI implements View {
             }
             System.out.println();
         }
-
-        // printing the bottom board
-//        System.out.println("bottom board:");
-//        for(int i = 0 ; i < level.getBottomBoard().length ; i++) {
-//            for(int j = 0 ; j < level.getBottomBoard()[0].length ; j++) {
-//                System.out.print(level.getBottomBoard()[i][j]);
-//            }
-//            System.out.println();
-//        }
-//
     }
 
     @Override
@@ -42,26 +42,15 @@ public class CLI implements View {
 
     @Override
     public void launch() {
+        // we get the full command from the user, pass it to the controller and then analyse it.
         Scanner in = new Scanner(System.in);
 
-        TextLevelLoader levelLoader = new TextLevelLoader();
-        Level lvl = levelLoader.load("resources\\level1.txt");
-        System.out.println(lvl != null);
-        MoveCommand move = new MoveCommand(new SokobanDataSource(lvl), this);
-        LinkedList<String> params = new LinkedList<>();
-
         while (loop) {
-            displayLevel(lvl);
-            System.out.print("type a direction: ");
-            String commandDir = in.next();
-            params.addLast(commandDir);
-            move.setParams(params);
-            move.execute();
+            System.out.print("type a full command: ");
+            String fullCommand = in.nextLine();
+            setChange(fullCommand);
+            notifyObservers();
         }
-
-        TextLevelSaver levelSaver = new TextLevelSaver();
-        levelSaver.save(lvl, "resources\\levelFinish.txt");
-
     }
 
     @Override

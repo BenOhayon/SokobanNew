@@ -5,18 +5,27 @@ import java.util.ArrayList;
 public abstract class Notifier {
 
     private ArrayList<Observer> observers;
+    private Object change;
 
-    void registerObserver(Observer observer) {
+    public Notifier() {
+        observers = new ArrayList<>();
+    }
+
+    public void addObserver(Observer observer) {
         observers.add(observer);
     }
 
-    void removeObserver(Observer observer) {
+    public void removeObserver(Observer observer) {
         observers.remove(observer);
     }
 
-    void notifyObservers() {
+    public void setChange(Object o) {
+        this.change = o;
+    }
+
+    public void notifyObservers() {
         for(Observer o : observers) {
-            o.update(this);
+            o.update(this, this.change);
         }
     }
 }

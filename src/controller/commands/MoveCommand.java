@@ -16,7 +16,7 @@ public class MoveCommand extends SokobanCommand {
 
     @Override
     public void execute() {
-        String direction = getParams().removeFirst();
+        String direction = getParams().remove(0);
         Level level = getModel().getLevel();
         String lowerDirection = direction.toLowerCase();
 
@@ -84,12 +84,13 @@ public class MoveCommand extends SokobanCommand {
         // restore the item that was at the player's previous position.
         level.changeBoardAt(charX, charY, level.getBottomItemAt(charX, charY));
 
+        getModel().setLevel(level);
         if(level.hasWon()) {
             getView().win();
         }
     }
 
-    // accepts the direction lower-case string.
+    // accepts the direction as lower-case string.
     private boolean isValidDirection(String direction) {
         return direction.equals("right") ||
                 direction.equals("left") ||
