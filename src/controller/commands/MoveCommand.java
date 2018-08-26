@@ -3,6 +3,7 @@ package controller.commands;
 import model.Model;
 import model.entities.Level;
 import model.entities.Position;
+import model.utils.CoordinatePack;
 import view.View;
 
 public class MoveCommand extends SokobanCommand {
@@ -32,39 +33,13 @@ public class MoveCommand extends SokobanCommand {
 
     private void move(String lowerDirection, Level level, int charX, int charY) {
 
-        // initialization for temporary values:
-        int nextX = charX;
-        int nextY = charY;
-        int boxX = charX;
-        int boxY = charY;
-        int nextBoxX = nextX;
-        int nextBoxY = nextY;
-
-        switch(lowerDirection) {
-            case "right":  // going right
-                nextY = charY + 1;
-                boxY = nextY;
-                nextBoxY = charY + 2;
-                break;
-
-            case "left":  // going left
-                nextY = charY - 1;
-                boxY = nextY;
-                nextBoxY = charY - 2;
-                break;
-
-            case "up":  // going up
-                nextX = charX - 1;
-                boxX = nextX;
-                nextBoxX = charX - 2;
-                break;
-
-            case "down":  // going down
-                nextX = charX + 1;
-                boxX = nextX;
-                nextBoxX = charX + 2;
-                break;
-        }
+        CoordinatePack pack = CoordinatePack.calculateNextCoordinates(lowerDirection, charX, charY);
+        int nextX = pack.getNext().getX();
+        int nextY = pack.getNext().getY();
+        int boxX = pack.getBox().getX();
+        int boxY = pack.getBox().getY();
+        int nextBoxX = pack.getNextBox().getX();
+        int nextBoxY = pack.getNextBox().getY();
 
         // moving the box, if exists:
         if(level.getItemAt(boxX, boxY) == '@') { // There's a box in front of the player.

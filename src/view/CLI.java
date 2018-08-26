@@ -33,6 +33,15 @@ public class CLI extends Notifier implements View {
             }
             System.out.println();
         }
+
+//        System.out.println("bottom board:");
+//        for(int i = 0 ; i < level.getBottomBoard().length ; i++) {
+//            for(int j = 0 ; j < level.getBottomBoard()[0].length ; j++) {
+//                System.out.print(level.getBottomBoard()[i][j]);
+//            }
+//            System.out.println();
+//        }
+
     }
 
     @Override
@@ -44,6 +53,13 @@ public class CLI extends Notifier implements View {
     public void launch() {
         // we get the full command from the user, pass it to the controller and then analyse it.
         Scanner in = new Scanner(System.in);
+//        char[][] board = {{'#', '#', '#', '#', '#', '#', '#', '#'},
+//                          {'#', ' ', ' ', '@', ' ', ' ', 'X', '#'},
+//                          {'#', 'A', ' ', '@', ' ', ' ', 'X', '#'},
+//                          {'#', ' ', ' ', ' ', ' ', ' ', ' ', '#'},
+//                          {'#', '#', '#', '#', '#', '#', '#', '#'}};
+//
+//        Level lvl = new Level("level2", board);
 
         while (loop) {
             System.out.print("type a full command: ");

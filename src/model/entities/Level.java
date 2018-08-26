@@ -32,6 +32,18 @@ public class Level {
         locateTargets();
     }
 
+    public Level(String name, char[][] board, char[][] bottomBoard) {
+//        this.steps = 0;
+//        this.seconds = 0;
+        this.name = name;
+        this.board = board.clone();
+        this.bottomBoard = new char[this.board.length][this.board[0].length];
+        this.bottomBoard = bottomBoard;
+
+        this.targets = new LinkedList<>();
+        locateTargets();
+    }
+
     private void locateTargets() {
         for(int i = 0 ; i < this.board.length ; i++) {
             for(int j = 0 ; j < this.board[0].length ; j++) {
