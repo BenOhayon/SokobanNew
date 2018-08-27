@@ -1,14 +1,14 @@
 package controller.commands;
 
 import model.Model;
+import model.SokobanPolicy;
 import model.entities.Level;
 import model.entities.Position;
 import model.utils.CoordinatePack;
+import model.utils.MessageType;
 import view.View;
 
 public class MoveCommand extends SokobanCommand {
-
-    // TODO Add the policy logic for the Sokoban game.
 
     public MoveCommand(Model m, View v) {
         setModel(m);
@@ -24,10 +24,13 @@ public class MoveCommand extends SokobanCommand {
         Position charPos = level.getCharacterPosition();
 
         if(isValidDirection(lowerDirection)) {
-            move(lowerDirection, level, charPos.getX(), charPos.getY());
+            if(SokobanPolicy.isValidMove(level, lowerDirection, charPos))
+                move(lowerDirection, level, charPos.getX(), charPos.getY());
+            else
+                getView().displayMessage("Cannot make this move due to gsme policy", MessageType.ERROR);
         }
         else {
-            System.out.println("This is not a valid direction. Please retype it.");
+            getView().displayMessage("This is not a valid direction. Please retype it.", MessageType.ERROR);
         }
     }
 

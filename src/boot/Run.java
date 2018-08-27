@@ -15,7 +15,6 @@ public class Run {
         datasource.addObserver(hq);
 
         screen.launch();
-//
     }
 
 }
