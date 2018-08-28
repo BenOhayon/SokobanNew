@@ -29,17 +29,17 @@ public class LoadCommand extends SokobanCommand {
 
     @Override
     public void execute() {
-        String fileName = getParams().remove(0);
+        String filePath = getParams().remove(0);
         // we split the file name to extract the file extension and load from the corresponding file type.
-        String[] fileNameSplit = fileName.split(Pattern.quote("."));
-        String extension = fileNameSplit[fileNameSplit.length - 1];
+        String[] fileNameSplit = filePath.split(Pattern.quote("\\"));
+        String fileName = fileNameSplit[fileNameSplit.length - 1];
+        String extension = fileName.split(Pattern.quote("."))[1];
         LevelLoader loader;
         if((loader = this.loaderMap.get(extension)) != null) {
-            Level loadedLevel = loader.load(fileName);
+            Level loadedLevel = loader.load(filePath);
             getModel().setLevel(loadedLevel);
-            getView().displayMessage("level loaded successfully!", MessageType.INFORMATION);
         } else {
-            getView().displayMessage("Cannot load the specified file. There's no such file type.", MessageType.ERROR);
+            getView().displayMessage("Cannot load the specified file. There's no such file type.", MessageType.ERROR, null);
         }
     }
 }

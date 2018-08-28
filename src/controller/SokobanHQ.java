@@ -4,22 +4,31 @@ import controller.commands.*;
 import controller.observer.Notifier;
 import controller.observer.Observer;
 import model.Model;
+import model.utils.MessageType;
 import view.View;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.regex.Pattern;
 
 public class SokobanHQ implements Controller, Observer {
 
+    private BlockingQueue<Command> commandQueue;
     private Map<String, Command> commandMap;
     private Model model;
     private View view;
+    private boolean stop;
 
     public SokobanHQ(Model model, View view) {
+        this.commandQueue = new ArrayBlockingQueue<>(10);
         this.model = model;
         this.view = view;
         this.commandMap = new HashMap<>();
+        this.stop = false;
         populateMap();
     }
 
@@ -30,14 +39,34 @@ public class SokobanHQ implements Controller, Observer {
         this.commandMap.put("save", new SaveCommand(model, view));
     }
 
+    public void insertCommand(Command cmd)
+    {
+        try {
+            commandQueue.put(cmd);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void start() {
-
+        new Thread(() -> {
+            while (!stop)
+            {
+                try {
+                    Command cmd = commandQueue.take();
+                    if (cmd != null)
+                        cmd.execute();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 
     @Override
     public void stop() {
-
+        stop = true;
     }
 
     @Override
@@ -50,19 +79,17 @@ public class SokobanHQ implements Controller, Observer {
             String command = (String) notifiedArg;
             // we split the command to extract the command type and its parameters, then extracting the appropriate
             // command object and execute it.
-            String[] commandSplit = command.split(" ");
+            String[] commandSplit = command.split(Pattern.quote(" "), 2);
             String commandType = commandSplit[0];
 
             Command c;
             if ((c = this.commandMap.get(commandType)) != null) {
                 LinkedList<String> params = new LinkedList<>();
-                for(int i = 1 ; i < commandSplit.length ; i++) {
-                    params.add(commandSplit[i]);
-                }
+                params.add(commandSplit[commandSplit.length - 1]);
                 c.setParams(params);
-                c.execute();
+                insertCommand(c);
             } else {
-                System.err.println("There's no such command. Please re-type.");
+                view.displayMessage("There's no such command. Please try again.", MessageType.ERROR, null);
             }
         }
     }

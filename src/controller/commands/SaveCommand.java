@@ -37,9 +37,9 @@ public class SaveCommand extends SokobanCommand {
         if((saver = this.saverMap.get(extension)) != null) {
             Level lvl = getModel().getLevel();
             saver.save(lvl, fileName);
-            getView().displayMessage("level saved successfully!", MessageType.INFORMATION);
+            getView().displayMessage("level saved successfully!", MessageType.INFORMATION, null);
         } else {
-            getView().displayMessage("Cannot save the file with this extension", MessageType.ERROR);
+            getView().displayMessage("Cannot save the file with this extension", MessageType.ERROR, null);
         }
     }
 }

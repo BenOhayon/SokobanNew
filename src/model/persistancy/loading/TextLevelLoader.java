@@ -15,6 +15,9 @@ public class TextLevelLoader implements LevelLoader {
         ArrayList<String> bottomRows = new ArrayList<>();
         BufferedReader br = null;
         try {
+            String[] pathSplit = path.split(Pattern.quote("\\"));
+            String name = pathSplit[pathSplit.length - 1].split(Pattern.quote("."))[0];
+
             br = new BufferedReader(new InputStreamReader(new FileInputStream(path)));
 
             String line;
@@ -22,9 +25,13 @@ public class TextLevelLoader implements LevelLoader {
                 rows.add(line);
             }
 
-            String[] pathSplit = path.split(Pattern.quote("\\"));
-            String name = pathSplit[pathSplit.length - 1].split(Pattern.quote("."))[0];
-            br = new BufferedReader((new InputStreamReader(new FileInputStream("resources\\" + name + "_bottom.txt"))));
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0 ; i < pathSplit.length - 1 ; i++) {
+                sb.append(pathSplit[i]).append("\\");
+            }
+
+            System.out.println(sb.toString() + name + "_bottom.txt");
+            br = new BufferedReader((new InputStreamReader(new FileInputStream(sb.toString() + name + "_bottom.txt"))));
 
             while((line = br.readLine()) != null) {
                 bottomRows.add(line);
@@ -38,19 +45,9 @@ public class TextLevelLoader implements LevelLoader {
             }
 
             newLevel = new Level(path, loadedBoard, loadedBottomBoard);
-
-        } catch (FileNotFoundException e) {
-            System.err.println("Error opening the level file");
-        } catch(IOException e2) {
-            System.err.println("Error reading from level file");
-        } finally {
-            try{
-                br.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch(NullPointerException npe) {
-                System.err.println("The BufferedReader object is null");
-            }
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         return newLevel;

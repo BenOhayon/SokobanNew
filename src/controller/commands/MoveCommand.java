@@ -27,10 +27,10 @@ public class MoveCommand extends SokobanCommand {
             if(SokobanPolicy.isValidMove(level, lowerDirection, charPos))
                 move(lowerDirection, level, charPos.getX(), charPos.getY());
             else
-                getView().displayMessage("Cannot make this move due to gsme policy", MessageType.ERROR);
+                getView().displayMessage("Cannot make this move due to gsme policy", MessageType.ERROR, null);
         }
         else {
-            getView().displayMessage("This is not a valid direction. Please retype it.", MessageType.ERROR);
+            getView().displayMessage("This is not a valid direction. Please retype it.", MessageType.ERROR, null);
         }
     }
 

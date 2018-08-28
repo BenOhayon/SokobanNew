@@ -44,6 +44,21 @@ public class Level {
         locateTargets();
     }
 
+    public int getNumberOfRows() {
+        return this.board.length;
+    }
+
+    public int getNumberOfColumns() {
+        int maxColumn = 0;
+
+        for(char[] row : this.board) {
+            if(row.length > maxColumn)
+                maxColumn = row.length;
+        }
+
+        return maxColumn;
+    }
+
     private void locateTargets() {
         for(int i = 0 ; i < this.board.length ; i++) {
             for(int j = 0 ; j < this.board[0].length ; j++) {

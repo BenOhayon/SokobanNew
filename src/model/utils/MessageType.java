@@ -1,3 +1,3 @@
 package model.utils;
 
-public enum MessageType { INFORMATION, ERROR}
+public enum MessageType { INFORMATION, ERROR, CONFIRMATION }
