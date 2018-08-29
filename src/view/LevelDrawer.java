@@ -14,7 +14,7 @@ public class LevelDrawer extends Canvas
     private Level level;
     private GraphicsContext gc;
 
-    private String imagesPath = "./resources";
+    private String charDirection;
 
     // flags used for displaying the character's moving animation.
     private boolean up = false;
@@ -29,16 +29,13 @@ public class LevelDrawer extends Canvas
     private Image characterUp1 = null, characterUp2 = null, characterDown1 = null, characterDown2 = null, characterLeft1 = null, characterLeft2 = null,
             characterRight1 = null, characterRight2 = null;
 
-    // Used for calculating the dimensions of a cell in the board according to the board size.
-    private double cellWidth;
-    private double cellHeight;
-
     public LevelDrawer() {
         loadImages();
     }
 
     private void loadImages() {
         try {
+            String imagesPath = "./resources";
             wall = new Image(new FileInputStream(imagesPath + "/wall3.png"));
             box = new Image(new FileInputStream(imagesPath + "/box4.png"));
             target = new Image(new FileInputStream(imagesPath + "/anchor4.png"));
@@ -56,7 +53,10 @@ public class LevelDrawer extends Canvas
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
 
+    void setCharDirection(String direction) {
+        this.charDirection = direction.toLowerCase();
     }
 
     public Level getLevel()
@@ -69,12 +69,13 @@ public class LevelDrawer extends Canvas
             this.level = lvl;
     }
 
-    public void draw() {
+    void draw() {
         double canvasWidth = this.getWidth();
         double canvasHeight = this.getHeight();
 
-        cellWidth = canvasWidth / level.getNumberOfColumns();
-        cellHeight = canvasHeight / level.getNumberOfRows();
+        // Used for calculating the dimensions of a cell in the board according to the board size.
+        double cellWidth = canvasWidth / level.getNumberOfColumns();
+        double cellHeight = canvasHeight / level.getNumberOfRows();
 
         gc = getGraphicsContext2D();
 
@@ -94,7 +95,49 @@ public class LevelDrawer extends Canvas
                         break;
 
                     case 'A':
-                        gc.drawImage(player, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                        if(this.charDirection == null)
+                            gc.drawImage(player, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                        else switch(this.charDirection) {
+                            case "right":
+                                if (!right) {
+                                    gc.drawImage(characterRight2, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                    right = true;
+                                } else {
+                                    gc.drawImage(characterRight1, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                    right = false;
+                                }
+                                break;
+
+                            case "left":
+                                if(left) {
+                                    gc.drawImage(characterLeft2, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                    left = false;
+                                } else {
+                                    gc.drawImage(characterLeft1, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                    left = true;
+                                }
+                                break;
+
+                            case "up":
+                                if(up){
+                                    up = false;
+                                    gc.drawImage(characterUp2, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                } else {
+                                    left = true;
+                                    gc.drawImage(characterUp1, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                }
+                                break;
+
+                            case "down":
+                                if(!down) {
+                                    down = true;
+                                    gc.drawImage(characterDown1, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                } else {
+                                    gc.drawImage(characterDown2, j * cellWidth, i * cellHeight, cellWidth, cellHeight);
+                                    down = false;
+                                }
+                                break;
+                        }
                         break;
 
                     case 'X':
@@ -109,67 +152,7 @@ public class LevelDrawer extends Canvas
         }
     }
 
-    public void drawCharacter(String direction) {
-
-        gc.clearRect(level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-
-        switch(direction) {
-            case "up":
-                gc.drawImage(characterUp1, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-                break;
-
-            case "down":
-                gc.drawImage(characterDown1, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-                break;
-
-            case "left":
-                gc.drawImage(characterLeft1, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-                break;
-
-            case "right":
-                gc.drawImage(characterRight1, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-                break;
-        }
+    void drawWinImage() {
+        gc.drawImage(new Image(new File("./resources/win-pic3.jpg").toURI().toString()), 0, 0, getWidth(), getHeight());
     }
-
-//    private void drawPlayerAnimation(Image charImage1, Image charImage2, String direction) {
-//        if(imageFlag)
-//            gc.drawImage(charImage1, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-//        else
-//            gc.drawImage(charImage2, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-//    }
-
-    public void drawWinImage() {
-        gc.drawImage(new Image(new File("./Resources/win-pic3.jpg").toURI().toString()), 0, 0, getWidth(), getHeight());
-    }
-
-    private void drawCharacterUp(){
-
-    }
-
-//    private void drawCharacterDown(){
-//
-//    }
-//
-//    private void drawCharacterLeft(){
-//        if(left) {
-//            gc.drawImage(characterLeft1, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-//            left = false;
-//        }
-//        else {
-//            gc.drawImage(characterLeft2, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-//            left = true;
-//        }
-//    }
-//
-//    private void drawCharacterRight(){
-//        if(right) {
-//            gc.drawImage(characterRight1, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-//            right = false;
-//        }
-//        else {
-//            gc.drawImage(characterRight2, level.getCharacterPosition().getY() * cellWidth, level.getCharacterPosition().getX() * cellHeight, cellWidth, cellHeight);
-//            right = true;
-//        }
-//    }
 }

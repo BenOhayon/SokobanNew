@@ -7,8 +7,7 @@ import java.util.function.Consumer;
 
 public interface View {
     void displayLevel(Level lvl);
-    void displayMessage(String content, MessageType messageType, Consumer<Boolean> callback);
-    void launch();
+    void displayMessage(String content, String title, MessageType messageType, Consumer<Boolean> callback);
     void quit();
     void win();
 }

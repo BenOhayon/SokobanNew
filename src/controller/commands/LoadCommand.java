@@ -39,7 +39,7 @@ public class LoadCommand extends SokobanCommand {
             Level loadedLevel = loader.load(filePath);
             getModel().setLevel(loadedLevel);
         } else {
-            getView().displayMessage("Cannot load the specified file. There's no such file type.", MessageType.ERROR, null);
+            getView().displayMessage("Cannot load the specified file. There's no such file type.", "Load Error", MessageType.ERROR, null);
         }
     }
 }

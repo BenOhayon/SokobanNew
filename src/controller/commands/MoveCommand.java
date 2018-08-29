@@ -23,14 +23,8 @@ public class MoveCommand extends SokobanCommand {
 
         Position charPos = level.getCharacterPosition();
 
-        if(isValidDirection(lowerDirection)) {
-            if(SokobanPolicy.isValidMove(level, lowerDirection, charPos))
-                move(lowerDirection, level, charPos.getX(), charPos.getY());
-            else
-                getView().displayMessage("Cannot make this move due to gsme policy", MessageType.ERROR, null);
-        }
-        else {
-            getView().displayMessage("This is not a valid direction. Please retype it.", MessageType.ERROR, null);
+        if(isValidDirection(lowerDirection) && SokobanPolicy.isValidMove(level, lowerDirection, charPos)) {
+            move(lowerDirection, level, charPos.getX(), charPos.getY());
         }
     }
 

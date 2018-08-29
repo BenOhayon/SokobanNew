@@ -30,7 +30,6 @@ public class TextLevelLoader implements LevelLoader {
                 sb.append(pathSplit[i]).append("\\");
             }
 
-            System.out.println(sb.toString() + name + "_bottom.txt");
             br = new BufferedReader((new InputStreamReader(new FileInputStream(sb.toString() + name + "_bottom.txt"))));
 
             while((line = br.readLine()) != null) {

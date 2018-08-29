@@ -8,17 +8,17 @@
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
-
-<?import view.LevelDrawer?>
 <?import javafx.scene.canvas.Canvas?>
+<?import view.LevelDrawer?>
+
 <AnchorPane prefHeight="431.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SUI">
    <children>
       <MenuBar layoutY="3.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Load level" onAction="#openFile" />
-                  <MenuItem mnemonicParsing="false" text="Save level" />
+                  <MenuItem mnemonicParsing="false" text="Load level" onAction="#openLevelFile" />
+                  <MenuItem mnemonicParsing="false" text="Save level" onAction="#saveLevelFile" />
                   <SeparatorMenuItem mnemonicParsing="false" />
               <MenuItem mnemonicParsing="false" text="Close" onAction="#quit" />
             </items>
@@ -32,7 +32,7 @@
             </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" text="About" onAction="#showAbout" />
             </items>
           </Menu>
         </menus>
@@ -40,9 +40,9 @@
       <HBox layoutX="14.0" layoutY="369.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label text="Steps: " />
-            <Label text="0" />
+            <Label fx:id="stepsLabel" text="0" />
             <Label text="Time: " />
-            <Label text="0" />
+            <Label fx:id="timeLabel" text="0" />
          </children>
          <opaqueInsets>
             <Insets />
@@ -52,6 +52,6 @@
          </padding>
       </HBox>
       <!--<Canvas height="521.0" layoutY="25.0" width="556.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />-->
-       <LevelDrawer fx:id="levelDrawer" height="521.0" layoutY="25.0" width="556.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <LevelDrawer fx:id="levelDrawer" height="521.0" layoutY="25.0" width="600.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
    </children>
 </AnchorPane>

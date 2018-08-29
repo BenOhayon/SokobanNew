@@ -7,7 +7,6 @@ import model.Model;
 import model.utils.MessageType;
 import view.View;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
@@ -39,7 +38,7 @@ public class SokobanHQ implements Controller, Observer {
         this.commandMap.put("save", new SaveCommand(model, view));
     }
 
-    public void insertCommand(Command cmd)
+    private void insertCommand(Command cmd)
     {
         try {
             commandQueue.put(cmd);
@@ -55,8 +54,7 @@ public class SokobanHQ implements Controller, Observer {
             {
                 try {
                     Command cmd = commandQueue.take();
-                    if (cmd != null)
-                        cmd.execute();
+                    cmd.execute();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -89,7 +87,7 @@ public class SokobanHQ implements Controller, Observer {
                 c.setParams(params);
                 insertCommand(c);
             } else {
-                view.displayMessage("There's no such command. Please try again.", MessageType.ERROR, null);
+                view.displayMessage("There's no such command. Please try again.", "Command Error", MessageType.ERROR, null);
             }
         }
     }
