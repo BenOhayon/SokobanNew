@@ -2,25 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e43dcd2e-2b13-456b-80fb-e3ae27f2fee5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Sokoban_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_clojure_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_clojure_java_jdbc_0_7_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/levels/level1Save.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/levels/level1Save2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/SokobanHQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/commands/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/commands/LoadCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/commands/MoveCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/commands/SaveCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/commands/SokobanCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/observer/Notifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/observer/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/SokobanDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/SokobanPolicy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/entities/Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/entities/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/persistancy/loading/LevelLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/persistancy/loading/TextLevelLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/persistancy/saving/LevelSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/persistancy/saving/TextLevelSaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/utils/CoordinatePack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/utils/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/LevelDrawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/Run.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/SUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/mainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/SokobanHQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/SokobanHQ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/LoadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/LoadCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/MoveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/MoveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/SaveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/loading/TextLevelLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/loading/TextLevelLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sokoban/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/SokobanHQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SokobanHQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/commands/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/LoadCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/commands/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/commands/SaveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/persistancy/loading/TextLevelLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/persistancy/loading/TextLevelLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CLI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LevelDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LevelDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/SUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/mainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/mainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sokoban.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sokoban.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/SokobanHQ.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/ExitCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/LoadCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/MoveCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/SaveCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/commands/SokobanCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Notifier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/controller/observer/Observer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/Model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/SokobanDataSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/SokobanPolicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/entities/Level.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/entities/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/loading/LevelLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/loading/TextLevelLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/saving/LevelSaver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/persistancy/saving/TextLevelSaver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/utils/CoordinatePack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/model/utils/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sokoban/view/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/levels/level1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/level1_bottom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/levels/level1_bottom.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SokobanHQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/LoadCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/SaveCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/commands/SokobanCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/observer/Notifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/observer/Observer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Model.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SokobanDataSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SokobanPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/entities/Level.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/entities/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/persistancy/loading/LevelLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/persistancy/loading/TextLevelLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/persistancy/saving/LevelSaver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/persistancy/saving/TextLevelSaver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/utils/CoordinatePack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/utils/MessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LevelDrawer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Run.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/SUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/mainWindow.fxml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,50 +128,61 @@
     <session id="100676064">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.30" value="2" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.52" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="MF" value="4" />
           <entry key="class" value="2" />
-          <entry key="fxml" value="2" />
-          <entry key="java" value="118" />
-          <entry key="sql" value="1" />
-          <entry key="txt" value="9" />
-          <entry key="yml" value="1" />
+          <entry key="fxml" value="11" />
+          <entry key="java" value="242" />
+          <entry key="md" value="1" />
+          <entry key="sql" value="2" />
+          <entry key="txt" value="10" />
+          <entry key="xml" value="4" />
+          <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="118" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="SQL" value="1" />
-          <entry key="XML" value="2" />
-          <entry key="YAML" value="1" />
+          <entry key="JAVA" value="242" />
+          <entry key="Manifest" value="4" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="15" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="110" />
-          <entry key="java" value="20254" />
-          <entry key="txt" value="244" />
+          <entry key="MF" value="19" />
+          <entry key="fxml" value="130" />
+          <entry key="java" value="21342" />
+          <entry key="txt" value="364" />
+          <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="20254" />
-          <entry key="PLAIN_TEXT" value="244" />
-          <entry key="XML" value="110" />
+          <entry key="JAVA" value="21342" />
+          <entry key="Manifest" value="19" />
+          <entry key="PLAIN_TEXT" value="364" />
+          <entry key="XML" value="164" />
         </counts>
       </usages-collector>
     </session>
@@ -102,34 +196,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/Run.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/Run.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="242">
+              <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/view/SUI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view/SUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="211" column="23" lean-forward="true" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="23" />
+            <state relative-caret-position="-121">
+              <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/mainWindow.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -156,37 +242,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/Model.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/Position.java" />
-        <option value="$PROJECT_DIR$/src/controller/commands/ExitCommand.java" />
-        <option value="$PROJECT_DIR$/src/model/persistancy/LevelLoader.java" />
-        <option value="$PROJECT_DIR$/src/model/persistancy/LevelSaver.java" />
-        <option value="$PROJECT_DIR$/src/model/persistancy/saving/LevelSaver.java" />
-        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/controller/observer/Observer.java" />
-        <option value="$PROJECT_DIR$/src/model/SokobanDataSource.java" />
-        <option value="$PROJECT_DIR$/src/controller/observer/Notifier.java" />
-        <option value="$PROJECT_DIR$/src/controller/commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/controller/commands/SokobanCommand.java" />
         <option value="$PROJECT_DIR$/resources/level1.txt" />
-        <option value="$PROJECT_DIR$/src/model/persistancy/saving/TextLevelSaver.java" />
         <option value="$PROJECT_DIR$/resources/level1_bottom.txt" />
         <option value="$PROJECT_DIR$/src/model/utils/CoordinatePack.java" />
-        <option value="$PROJECT_DIR$/src/model/SokobanPolicy.java" />
         <option value="$PROJECT_DIR$/src/boot/Run.java" />
-        <option value="$PROJECT_DIR$/src/model/entities/Level.java" />
         <option value="$PROJECT_DIR$/src/model/utils/MessageType.java" />
         <option value="$PROJECT_DIR$/src/view/CLI.java" />
-        <option value="$PROJECT_DIR$/src/view/Run.java" />
         <option value="$PROJECT_DIR$/src/view/View.java" />
         <option value="$PROJECT_DIR$/src/controller/commands/LoadCommand.java" />
         <option value="$PROJECT_DIR$/src/controller/commands/SaveCommand.java" />
-        <option value="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" />
         <option value="$PROJECT_DIR$/src/view/LevelDrawer.java" />
+        <option value="$PROJECT_DIR$/src/controller/commands/MoveCommand.java" />
+        <option value="$PROJECT_DIR$/src/controller/commands/SokobanCommand.java" />
+        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/Level.java" />
+        <option value="$PROJECT_DIR$/src/model/entities/Position.java" />
+        <option value="$PROJECT_DIR$/src/model/SokobanPolicy.java" />
         <option value="$PROJECT_DIR$/src/controller/SokobanHQ.java" />
+        <option value="$PROJECT_DIR$/src/view/Run.java" />
         <option value="$PROJECT_DIR$/src/view/mainWindow.fxml" />
         <option value="$PROJECT_DIR$/src/model/persistancy/loading/TextLevelLoader.java" />
         <option value="$PROJECT_DIR$/src/view/SUI.java" />
+        <option value="$PROJECT_DIR$/src/model/persistancy/saving/TextLevelSaver.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/commands/Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/commands/SokobanCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/commands/MoveCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/observer/Notifier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/observer/Observer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/entities/Level.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/entities/Position.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/persistancy/loading/LevelLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/persistancy/loading/TextLevelLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/persistancy/saving/LevelSaver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/utils/CoordinatePack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/utils/MessageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/SokobanDataSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/SokobanPolicy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/LevelDrawer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/View.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/commands/LoadCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/commands/ExitCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/SokobanHQ.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/persistancy/saving/TextLevelSaver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/commands/SaveCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/mainWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/java/view/Run.java" />
+        <option value="$PROJECT_DIR$/src/main/java/view/SUI.java" />
       </list>
     </option>
   </component>
@@ -214,9 +320,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,67 +338,56 @@
               <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="persistancy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="persistancy" type="462c0819:PsiDirectoryNode" />
-              <item name="loading" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="persistancy" type="462c0819:PsiDirectoryNode" />
-              <item name="saving" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Sokoban" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Sokoban" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535572822376" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SokobanEli" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535722537612" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\Java\inteliJ idea projects\Sokoban\resources\levels" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\Java\inteliJ idea projects\Sokoban\target\classes\view" />
       <recent name="D:\Documents\Java\inteliJ idea projects\Sokoban" />
     </key>
   </component>
@@ -309,51 +403,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Run (1)">
+  <component name="RunManager" selected="Application.Run">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Run" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="view.Run" />
       <module name="Sokoban" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boot.Run" />
-      <module name="Sokoban" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.SUI" />
-      <module name="Sokoban" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -369,6 +428,12 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Sokoban" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Sokoban_jar/Sokoban.jar" />
+      <option name="WORKING_DIRECTORY" value="D:\Documents\Java\inteliJ idea projects\Sokoban" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -389,13 +454,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.Run" />
-      <item itemvalue="Application.SUI" />
-      <item itemvalue="Application.Run (1)" />
+      <item itemvalue="JAR Application.Sokoban" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Run (1)" />
-        <item itemvalue="Application.SUI" />
         <item itemvalue="Application.Run" />
       </list>
     </recent_temporary>
@@ -419,7 +481,10 @@
       <workItem from="1535270995702" duration="19590000" />
       <workItem from="1535354306368" duration="6237000" />
       <workItem from="1535464283480" duration="15520000" />
-      <workItem from="1535528819751" duration="11483000" />
+      <workItem from="1535528819751" duration="11899000" />
+      <workItem from="1535615585838" duration="3116000" />
+      <workItem from="1535620362390" duration="6284000" />
+      <workItem from="1535717274584" duration="5267000" />
     </task>
     <task id="LOCAL-00001" summary="commit via IntelliJ">
       <created>1535284905081</created>
@@ -442,17 +507,23 @@
       <option name="project" value="LOCAL" />
       <updated>1535481433021</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Monitoring for number of steps and elapsed time added,&#10;but need to be set to start when the level is loaded.">
+      <created>1535573000188</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535573000188</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80650000" />
+    <option name="totallyTimeSpent" value="95733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18731117" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19486405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -479,7 +550,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.32930514" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32930514" />
-      <window_info anchor="right" id="Run" order="9" weight="0.28247735" />
+      <window_info anchor="right" id="Run" order="9" weight="0.16389728" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,147 +600,25 @@
     <MESSAGE value="commit via IntelliJ" />
     <MESSAGE value="Starting working with JavaFX" />
     <MESSAGE value="displaying functionality of JavaFX added,&#10;loading level file according to file choosing added." />
-    <option name="LAST_COMMIT_MESSAGE" value="displaying functionality of JavaFX added,&#10;loading level file according to file choosing added." />
+    <MESSAGE value="Monitoring for number of steps and elapsed time added,&#10;but need to be set to start when the level is loaded." />
+    <option name="LAST_COMMIT_MESSAGE" value="Monitoring for number of steps and elapsed time added,&#10;but need to be set to start when the level is loaded." />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
-          <folding>
-            <element signature="e#10225#10226#0" expanded="true" />
-            <element signature="e#10308#10309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="4943" column="25" selection-start-line="4943" selection-start-column="25" selection-end-line="4943" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/levelFinish.txt" />
-    <entry file="file://$PROJECT_DIR$/src/model/persistancy/saving/LevelSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/observer/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/regex/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="1338" column="25" selection-start-line="1338" selection-start-column="25" selection-end-line="1338" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="82" column="13" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/commands/ExitCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/commands/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Sokoban/boot/Run.class" />
-    <entry file="file://$PROJECT_DIR$/src/controller/commands/SokobanCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/BufferedReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="390" column="18" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="250" column="16" lean-forward="true" selection-start-line="250" selection-start-column="16" selection-end-line="250" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/level2_bottom.txt" />
-    <entry file="file://$PROJECT_DIR$/resources/level2.txt" />
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/level1_bottom.txt">
+    <entry file="file://$PROJECT_DIR$/resources/levels/level1_bottom.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/level1.txt">
+    <entry file="file://$PROJECT_DIR$/resources/levels/level1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/utils/CoordinatePack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/SokobanDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/worldRecordsQuery.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -681,26 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/SokobanPolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/entities/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
-          <folding>
-            <element signature="method#getNumberOfColumns#0;class#Level#0" />
-            <element signature="method#locateTargets#0;class#Level#0" />
-            <element signature="method#hasWon#0;class#Level#0" />
-            <element signature="method#getCharacterPosition#0;class#Level#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -708,28 +637,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/CLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/utils/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CLI.java" />
     <entry file="file://$PROJECT_DIR$/src/boot/Run.java" />
-    <entry file="file://$PROJECT_DIR$/src/controller/observer/Notifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/BlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -755,10 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3000">
           <caret line="459" column="19" selection-start-line="459" selection-start-column="19" selection-end-line="459" selection-end-column="19" />
-          <folding>
-            <element signature="e#108984#108985#0" expanded="true" />
-            <element signature="e#109027#109028#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,105 +674,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/LevelDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
-            <element signature="e#2725#2726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/commands/MoveCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/SokobanHQ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#1853#1854#0" expanded="true" />
-            <element signature="e#1880#1881#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Optional.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="157" column="19" selection-start-line="157" selection-start-column="19" selection-end-line="157" selection-end-column="19" />
-          <folding>
-            <element signature="e#4812#4813#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Run.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/persistancy/loading/TextLevelLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/persistancy/saving/TextLevelSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/commands/SaveCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/commands/LoadCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="41" column="110" selection-start-line="41" selection-start-column="110" selection-end-line="41" selection-end-column="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/mainWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -883,12 +695,359 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/SUI.java">
+    <entry file="file://$PROJECT_DIR$/resources/worldRecordsQuery.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="211" column="23" lean-forward="true" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="23" />
+        <state relative-caret-position="80">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/levels/level1Save.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Sokoban/main/java/view/mainWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11260" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/commands/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/commands/SokobanCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/observer/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/observer/Notifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/entities/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding>
+            <element signature="method#getNumberOfColumns#0;class#Level#0" />
+            <element signature="method#locateTargets#0;class#Level#0" />
+            <element signature="method#hasWon#0;class#Level#0" />
+            <element signature="method#getCharacterPosition#0;class#Level#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/entities/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/commands/MoveCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/persistancy/loading/LevelLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/persistancy/loading/TextLevelLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="65" lean-forward="true" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/persistancy/saving/LevelSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/utils/CoordinatePack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/utils/MessageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/SokobanPolicy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/SokobanDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/LevelDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1477">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/commands/LoadCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/commands/ExitCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/persistancy/saving/TextLevelSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/commands/SaveCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/mainWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/view/mainWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SokobanHQ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1060">
+          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view/SUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Sokoban:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Sokoban</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
