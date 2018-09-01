@@ -2,6 +2,7 @@ package model.entities;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 public class Level {
 
@@ -98,7 +99,11 @@ public class Level {
     }
 
     public String getName() {
-        return this.name;
+        String[] fileNameSplit = this.name.split(Pattern.quote("\\"));
+        String levelName = fileNameSplit[fileNameSplit.length-1];
+        String isolateName = levelName.split(Pattern.quote("."))[0];
+
+        return isolateName;
     }
 
     public char[][] getBoard() {

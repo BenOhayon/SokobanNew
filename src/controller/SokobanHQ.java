@@ -88,7 +88,7 @@ public class SokobanHQ implements Controller, Observer {
                 DbPlayer newPlayer = new DbPlayer(name, level.getName(), level.getSteps(), level.getElapsedTime());
 
                 try {
-                    db.addPlayer(newPlayer);
+                    DatabaseConnector.addPlayer(newPlayer);
                     view.displayMessage("You have joined the leaderboards", "Leaderboards", MessageType.INFORMATION, null);
                 } catch (SQLException e) {
                     view.displayMessage(e.getMessage(), "Record Insertion Error", MessageType.ERROR, null);

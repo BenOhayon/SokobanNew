@@ -9,19 +9,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
+<!--<?import view.LevelDrawer?>-->
+
 <?import view.LevelDrawer?>
-<AnchorPane prefHeight="431.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SUI">
+<AnchorPane prefHeight="431.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SUI">
    <children>
       <MenuBar layoutY="3.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Load level" onAction="#openLevelFile" />
-                  <MenuItem mnemonicParsing="false" text="Save level" onAction="#saveLevelFile" />
+                  <MenuItem mnemonicParsing="false" onAction="#openLevelFile" text="Load level" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveLevelFile" text="Save level" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-              <MenuItem mnemonicParsing="false" text="Close" onAction="#exit" />
+              <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Leaderboards">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Show Leaderboards..." onAction="#showLeaderboards" />
+              </items>
+            </Menu>
             <Menu mnemonicParsing="false" text="Music">
               <items>
                 <MenuItem mnemonicParsing="false" text="Play..." />
@@ -31,7 +38,7 @@
             </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" onAction="#showAbout" />
+              <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
             </items>
           </Menu>
         </menus>

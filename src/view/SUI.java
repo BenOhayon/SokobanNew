@@ -6,22 +6,30 @@ import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
-import javafx.event.Event;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import model.database.DatabaseConnector;
+import model.database.DbPlayer;
 import model.entities.Level;
 import model.utils.MessageType;
 
+import java.beans.EventHandler;
 import java.io.File;
-import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Optional;
 import java.util.function.Consumer;
 
@@ -29,6 +37,12 @@ public class SUI extends Notifier implements View {
 
     private int steps, time;
     private Timeline timer;
+
+    private ChoiceBox<String> ddSearch;
+    private TextField searchKeyWord;
+    private LeaderboardsController lbc;
+    private VBox vbox;
+    private TableView<DbPlayer> table;
 
     @FXML
     private LevelDrawer levelDrawer;
@@ -81,6 +95,93 @@ public class SUI extends Notifier implements View {
 
             stepsLabel.setText("" + (++steps));
         });
+    }
+
+    @FXML
+    public void showLeaderboards() {
+        try
+        {
+            Stage primaryStage = new Stage();
+            StackPane pane = new StackPane();
+            lbc = new LeaderboardsController();
+
+            table = lbc.loadAllEntries();
+
+            vbox = new VBox(20);
+
+            searchKeyWord = new TextField();
+            searchKeyWord.setPromptText("search value");
+            searchKeyWord.setPrefWidth(100);
+            searchKeyWord.setEditable(false);
+
+            ddSearch = new ChoiceBox<>();
+            ddSearch.getItems().addAll("All", "Name", "Level Name");
+            ddSearch.setPrefWidth(100);
+            ddSearch.setValue("All");
+            ddSearch.getSelectionModel().selectedItemProperty().addListener((v, oldItem, newItem) -> {
+
+                if(newItem.equals("All"))
+                    searchKeyWord.setEditable(false);
+                else
+                    searchKeyWord.setEditable(true);
+            });
+
+            Button searchButton = new Button("Filter");
+            searchButton.setPrefWidth(100);
+            searchButton.setOnAction(this::filterButtonPressed);
+
+            HBox hbox = new HBox(ddSearch, searchKeyWord, searchButton);
+            hbox.setSpacing(20);
+            hbox.setPadding(new Insets(0,0,0,65));
+
+            vbox.getChildren().addAll(table, hbox);
+            pane.getChildren().addAll(vbox);
+            Scene scene = new Scene(pane, 500, 450);
+            primaryStage.setScene(scene);
+            primaryStage.setTitle("Leaderboards");
+            primaryStage.setResizable(false);
+
+            primaryStage.show();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    // TODO fix the TableView update bug
+    private void filterButtonPressed(ActionEvent e) {
+        String choice = ddSearch.getValue();
+        String inputText = searchKeyWord.getText();
+        table.setEditable(true);
+
+        try {
+            switch(choice)
+            {
+                case "All":
+                    table = lbc.loadAllEntries();
+                    vbox.getChildren().set(0, table);
+                    break;
+
+                case "Player Name":
+//                    table = lbc.loadEntriesByName(inputText);
+//                    vbox.getChildren().set(0, table);
+                    ObservableList<DbPlayer> newList = FXCollections.observableArrayList();
+                    newList.addAll(DatabaseConnector.getPlayersByName(inputText));
+                    table.setItems(newList);
+                    break;
+
+                case "Level Name":
+                    table = lbc.loadEntriesByLevel(inputText);
+                    vbox.getChildren().set(0, table);
+                    break;
+            }
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        }
+
+        searchKeyWord.clear();
+
     }
 
     @FXML
@@ -252,9 +353,7 @@ public class SUI extends Notifier implements View {
                             cancelButton.setMnemonicParsing(false);
                             cancelButton.setPrefHeight(41.0);
                             cancelButton.setPrefWidth(75.0);
-                            cancelButton.setOnAction(event -> {
-                                cancelButton.getScene().getWindow().hide();
-                            });
+                            cancelButton.setOnAction(event -> cancelButton.getScene().getWindow().hide());
 
                             AnchorPane root = new AnchorPane(label, name, okButton, cancelButton);
                             Stage stage = new Stage();
