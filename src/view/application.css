@@ -1,0 +1,8 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-background-image: url("file:resources/sokoban_back1.gif");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 900 580;
+    -fx-background-position: center center;
+    -fx-background-background: rgb(0,0,255)
+}

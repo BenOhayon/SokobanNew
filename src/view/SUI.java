@@ -1,22 +1,27 @@
 package view;
 
 import controller.observer.Notifier;
+
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
+import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import model.entities.Level;
 import model.utils.MessageType;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Optional;
 import java.util.function.Consumer;
 
@@ -150,7 +155,7 @@ public class SUI extends Notifier implements View {
             case INFORMATION:
                 Platform.runLater(() -> {
                     Alert alert = new Alert(Alert.AlertType.INFORMATION, content);
-                    alert.setTitle("Sokoban Message");
+                    alert.setTitle(title);
                     alert.setHeaderText(null);
                     alert.show();
                 });
@@ -160,7 +165,7 @@ public class SUI extends Notifier implements View {
             case ERROR:
                 Platform.runLater(() -> {
                     Alert alert = new Alert(Alert.AlertType.ERROR, content);
-                    alert.setTitle("Sokoban Error");
+                    alert.setTitle(title);
                     alert.setHeaderText(null);
                     alert.show();
                 });
@@ -169,7 +174,7 @@ public class SUI extends Notifier implements View {
 
             case CONFIRMATION:
                 Alert alertC = new Alert(Alert.AlertType.CONFIRMATION, content, ButtonType.YES, ButtonType.NO);
-                alertC.setTitle("Sokoban Confirmation");
+                alertC.setTitle(title);
                 alertC.setHeaderText(null);
                 Optional<ButtonType> result = alertC.showAndWait();
                 callback.accept(result.isPresent() && result.get() == ButtonType.YES);
@@ -194,6 +199,12 @@ public class SUI extends Notifier implements View {
 
     @Override
     public void win() {
+        setChange("update steps " + stepsLabel.getText());
+        notifyObservers();
+
+        setChange("update time " + timeLabel.getText());
+        notifyObservers();
+
         if (timer != null)
             timer.stop();
 
@@ -206,11 +217,52 @@ public class SUI extends Notifier implements View {
         }
 
         Platform.runLater(() ->
-            displayMessage("Would you like to start another game?",
+            displayMessage("Would you like to join the global leaderboards?",
                     "Game Over", MessageType.CONFIRMATION,
                     condition -> {
                         if(condition) {
-                            openLevelFile();
+                            Label label = new Label("Full Name: ");
+                            label.setLayoutX(34.0);
+                            label.setLayoutY(35.0);
+                            label.setPrefWidth(75.0);
+                            label.setPrefHeight(35.0);
+
+                            TextField name = new TextField();
+                            name.setLayoutX(109.0);
+                            name.setLayoutY(40.0);
+                            name.setPrefWidth(228.0);
+                            name.setPrefHeight(25.0);
+                            name.setId("name");
+
+                            Button okButton = new Button("OK");
+                            okButton.setOnAction(event -> {
+                                setChange("join " + name.getText());
+                                notifyObservers();
+                                okButton.getScene().getWindow().hide();
+                            });
+                            okButton.setLayoutX(89.0);
+                            okButton.setLayoutY(91.0);
+                            okButton.setMnemonicParsing(false);
+                            okButton.setPrefWidth(75.0);
+                            okButton.setPrefHeight(41.0);
+
+                            Button cancelButton = new Button("CANCEL");
+                            cancelButton.setLayoutX(232.0);
+                            cancelButton.setLayoutY(91.0);
+                            cancelButton.setMnemonicParsing(false);
+                            cancelButton.setPrefHeight(41.0);
+                            cancelButton.setPrefWidth(75.0);
+                            cancelButton.setOnAction(event -> {
+                                cancelButton.getScene().getWindow().hide();
+                            });
+
+                            AnchorPane root = new AnchorPane(label, name, okButton, cancelButton);
+                            Stage stage = new Stage();
+                            Scene scene = new Scene(root, 450, 200);
+                            stage.setScene(scene);
+                            stage.setTitle("Joining Leaderboards");
+                            stage.setResizable(false);
+                            stage.show();
                         }
                     }
             ));

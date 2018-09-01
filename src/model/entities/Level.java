@@ -9,12 +9,12 @@ public class Level {
     private char[][] board;
     private char[][] bottomBoard;
     private List<Position> targets;
-//    private int steps;
-//    private int seconds;
+    private int steps;
+    private int seconds;
 
     public Level(String name, char[][] board) {
-//        this.steps = 0;
-//        this.seconds = 0;
+        this.steps = 0;
+        this.seconds = 0;
         this.name = name;
         this.board = board.clone();
         this.bottomBoard = new char[this.board.length][this.board[0].length];
@@ -33,8 +33,8 @@ public class Level {
     }
 
     public Level(String name, char[][] board, char[][] bottomBoard) {
-//        this.steps = 0;
-//        this.seconds = 0;
+        this.steps = 0;
+        this.seconds = 0;
         this.name = name;
         this.board = board.clone();
         this.bottomBoard = new char[this.board.length][this.board[0].length];
@@ -115,5 +115,21 @@ public class Level {
 
     public void changeBottomBoardAt(int i, int j, char newItem) {
         this.bottomBoard[i][j] = newItem;
+    }
+
+    public int getSteps() {
+        return this.steps;
+    }
+
+    public int getElapsedTime() {
+        return this.seconds;
+    }
+
+    public void setSteps(int steps) {
+        this.steps = steps;
+    }
+
+    public void setElapsedTime(int seconds) {
+        this.seconds = seconds;
     }
 }

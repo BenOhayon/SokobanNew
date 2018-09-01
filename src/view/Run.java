@@ -3,10 +3,13 @@ package view;
 import controller.SokobanHQ;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
 import model.SokobanDataSource;
+
+import java.io.File;
 
 public class Run extends Application {
 
@@ -17,9 +20,13 @@ public class Run extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("mainWindow.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/mainWindow.fxml"));
             AnchorPane root = loader.load();
+            File f = new File("/resources/sokoban_icon.jpg");
+            Image image = new Image(f.toURI().toString());
+            primaryStage.getIcons().add(image);
             Scene scene = new Scene(root, 800, 650);
+            scene.getStylesheets().add("/view/application.css");
 
             SUI window = loader.getController();
             SokobanDataSource dataSource = new SokobanDataSource();

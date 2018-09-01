@@ -153,6 +153,6 @@ public class LevelDrawer extends Canvas
     }
 
     void drawWinImage() {
-        gc.drawImage(new Image(new File("./resources/win-pic3.jpg").toURI().toString()), 0, 0, getWidth(), getHeight());
+        gc.drawImage(new Image(new File("./resources/win-pic.gif").toURI().toString()), 0, 0, getWidth(), getHeight());
     }
 }
